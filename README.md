@@ -1,2 +1,20 @@
-# -SnapDrop-Edge
-A simple, public or private file uploader hosted on Pages files stored in Cloudflare R2. Why it’s cool: Worker handles signed upload URLs Pages hosts the upload/download interface Add optional one-time download links, passwords, or TTLs You could use this: To share photos with friends For quick file transfers As a personal mini cloud drive
+# SnapDrop Edge
+
+A simple edge-powered file dropbox using Cloudflare Workers + Pages + R2.
+
+## Features
+- Upload files via signed URLs
+- Download with expiring links
+- Runs entirely at the edge
+
+## Deploy
+1. Create an R2 bucket named `snapdrop-edge`.
+2. Update `wrangler.toml` with your account details.
+3. Deploy Worker:
+   ```bash
+   cd worker
+   wrangler deploy
+
+
+---
+
